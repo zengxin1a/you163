@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Title</title>
+  <style>
+    #app {
+      width: 300px;
+    }
+    #app div {
+      width: 50%;
+      height: 150px;
+      float: left;
+    }
+    #app .pp {
+      background: red;      width: 50%;
+
+    }
+    #app  .oo {
+      background: lime;
+      height: 80px;      width: 50%;
+
+    }
+    #app  .ii {
+      height: 50px;
+      background: red;      width: 50%;
+
+
+    }
+    #app  .hh {
+      height: 80px;
+      background: lime;      width: 50%;
+
+
+    }
+    #app .ll {
+      height: 136px;
+      background: red;      width: 50%;
+
+
+    }
+  </style>
+</head>
+<body>
+<div id="app">
+  <div class="pp">5556</div>
+  <div class="oo">56554</div>
+  <div class="ii">56554</div>
+  <div class="hh">56554</div>
+  <div class="ll">56554</div>
+</div>
+
+<!--<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>-->
+<script>
+  var arr = [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16]
+  var temp = []
+  var result = []
+  for (let i = 0 ; i<arr.length ; i ++ ) {
+    for (let j = i+1 ; j<arr.length ; j++){
+      if ( (j - i) === 8) {
+        temp.push(arr[i])
+        temp.push(arr[j])
+        result.push(temp)
+        temp = []
+      }
+    }
+  }
+  console.log(result)
+
+
+  var arr1 = [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16]
+  var temp1 = []
+  var temp2 = []
+  arr1.forEach((item, index) => {
+    if (index % 2 === 0 ) {
+      temp1.push(item)
+    } else {
+      temp2.push(item)
+    }
+  })
+  console.log(temp1)
+  console.log(temp2)
+</script>
+
+</body>
+
+</html>
